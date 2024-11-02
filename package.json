@@ -1,13 +1,19 @@
 {
   "name": "cosinity",
-  "type": "module",
   "version": "1.0.0",
-  "description": "[![NPM Version](https://img.shields.io/npm/v/cosinity.svg)](https://www.npmjs.com/package/cosinity) [![License](https://img.shields.io/npm/l/cosinity.svg)](https://github.com/yourusername/cosinity/blob/main/LICENSE) [![Downloads](https://img.shields.io/npm/dt/cosinity.svg)](https://www.npmjs.com/package/cosinity)",
-  "main": "index.js",
+  "description": "A simple package for cosine similarity calculation with both module support.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "main": "index.cjs",
+  "module": "index.js",
+  "type": "module",
+  "keywords": [
+    "cosine",
+    "similarity",
+    "vector",
+    "embedding"
+  ],
   "author": "Develanet",
   "license": "ISC"
 }

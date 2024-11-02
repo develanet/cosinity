@@ -7,7 +7,7 @@
  * @throws {Error} If the input vectors are not of the same length.
  */
 
-export function cosineSimilarity(vectorA, vectorB) {
+function cosineSimilarity(vectorA, vectorB) {
   if (vectorA.length !== vectorB.length) {
     throw new Error("Vectors must be of the same length");
   }
@@ -28,4 +28,4 @@ export function cosineSimilarity(vectorA, vectorB) {
   return magnitudeA && magnitudeB ? dotProduct / (magnitudeA * magnitudeB) : 0;
 }
 
-export default cosineSimilarity;
+module.exports = cosineSimilarity;
