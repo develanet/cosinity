@@ -48,7 +48,7 @@ yarn add cosinity
 ### ES6 Modules
 
 ```javascript
-import { cosineSimilarity } from "cosinity";
+import cosineSimilarity from "cosinity";
 
 const vectorA = [1, 2, 3];
 const vectorB = [4, 5, 6];
@@ -60,7 +60,7 @@ console.log("Cosine Similarity:", similarity);
 ### CommonJS
 
 ```javascript
-const { cosineSimilarity } = require("cosinity");
+const cosineSimilarity = require("cosinity");
 
 const vectorA = [1, 2, 3];
 const vectorB = [4, 5, 6];
@@ -93,7 +93,7 @@ Calculates the cosine similarity between two vectors.
 ### Basic Example
 
 ```javascript
-import { cosineSimilarity } from "cosinity";
+import cosineSimilarity from "cosinity";
 
 const vectorA = [0, 1];
 const vectorB = [1, 0];
@@ -108,7 +108,7 @@ Cosinity can be integrated with OpenAI's Embedding API to calculate the similari
 
 ```javascript
 import OpenAI from "openai";
-import { cosineSimilarity } from "cosinity";
+import cosineSimilarity from "cosinity";
 
 const openai = new OpenAI({
   apiKey: "YOUR_OPENAI_API_KEY", // Replace with your OpenAI API key
